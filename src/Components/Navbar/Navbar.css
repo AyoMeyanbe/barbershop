@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.5s;
+}
+.navbar img {
+    width: 75px;
+}
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 24px;
+    cursor: pointer;
+}
+.dark {
+    background-color: #283618;
+}

@@ -1,0 +1,30 @@
+.about {
+    margin: 80px 122px 40px 122px;
+    display: flex;
+    /* border: 2px solid black; */
+}
+.about-img {
+    width: 300px;
+    border-radius: 32px  0 0 32px;
+}
+
+.about-text {
+    padding-left: 47px;
+}
+.about-text h3 {
+    color: #DDA15E;
+    font-size: 24px;
+    font-weight: bold;
+}
+.about-text h1 {
+    color: #606C38;
+    font-size: 30px;
+}
+
+hr {
+    margin: 21px 0;
+}
+.about-text p {
+    color: #333333;
+    font-size: 20px;
+}

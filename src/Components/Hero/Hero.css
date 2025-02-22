@@ -1,0 +1,50 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../barber-assets/hero-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    
+}
+
+.hero h3 {
+    font-size: 32px;
+    color: #dda15e;
+    font-weight: normal;
+}
+.hero h1 {
+    font-size: 64px;
+    font-weight: normal;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.location h4 {
+    font-size: 16px;
+}
+.location img {
+    width: 25px;
+}
+.explore-btn {
+    background-color: #283618;
+    font-size: 16px;
+    height: 45px;
+    width: 230px;
+    border-radius: 23px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explore-img {
+    width: 25px;
+    margin-left: 10px;
+}
