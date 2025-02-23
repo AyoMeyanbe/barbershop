@@ -2,18 +2,21 @@
     padding: 0 40px;
     position: relative;
     /* border: 1px solid black; */
-    overflow: hidden;
+    overflow-x: hidden;
+    margin-bottom: 40px;
 }
-.slider ul {
+.testimonies {
     display: flex;
     list-style: none;
     width: 250%;
     overflow-x: hidden;
     justify-content: space-between;
     transition: 0.5s;
+    /* border: 1px solid black; */
+    padding: 15px 0;
     /* transform: translateX(-40%); */
 }
-.slider ul li {
+.slide-container {
     width: 50%;
     /* margin: 0 16px; */
     padding: 0 20px;
@@ -35,8 +38,9 @@
 }
 .slide {
     padding: 25px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin: 0 25px;
+    border-radius: 10px;
 }
 .user-info {
     display: flex;

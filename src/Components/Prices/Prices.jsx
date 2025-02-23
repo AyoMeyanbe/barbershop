@@ -5,7 +5,7 @@ import Title from '../Title/Title'
 const Prices = () => {
   return (
     <div className='prices'>
-      <Title title="Prices And Services" subTitle="Fresh Cuts & Fair Prices"/>
+      <Title title="Prices And Services" subTitle="Fresh Cuts & Fair Prices" type='primary'/>
       <div className="container prices-display">
         <ul>
           <li>

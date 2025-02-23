@@ -16,7 +16,7 @@ const Testimonials = () => {
   // let tx = 0;
   useEffect(() => {
     if (slider.current) {
-      slider.current.style.transform = `translateX(${tx}px)`;
+      slider.current.style.transform = `translateX(${tx}%)`;
     }
   }, [tx]);
   console.log(tx);
@@ -38,80 +38,58 @@ const Testimonials = () => {
     console.log(tx);
   };
 
+  const testimonies = [
+    {
+      name: "Jeff",
+      image: pfp_1,
+      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+    },
+    {
+      name: "Jeff",
+      image: pfp_2,
+      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+    },
+    {
+      name: "Jeff",
+      image: pfp_3,
+      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+    },
+    {
+      name: "Jeff",
+      image: pfp_4,
+      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+    },
+    {
+      name: "Jeff",
+      image: pfp_5,
+      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+    }
+  ]
+
   return (
     <div>
       <Title title="Testimonials" subTitle="Voices of Satisfaction" />
       <div className="container slider">
+        
+        <div ref={slider} className="testimonies">
+          {testimonies.map((testimony, index) => (
+            <div key={index} className="slide-container">
+            <div className="slide">
+              <div className="user-info">
+                <img src={`https://i.pravatar.cc/150?img=${index}`} alt="" />
+                <h3>{testimony.name}</h3>
+              </div>
+              <p>
+                {testimony.text}
+              </p>
+            </div>
+          </div>
+          ))}
+        </div>
         <img src={next_btn} alt="" className="next-btn" onClick={increaseTx} />
         <img src={back_btn} alt="" className="back-btn" onClick={decreaseTx} />
-        <ul ref={slider}>
-          <li>
-            <div className="slide">
-              <div className="user-info">
-                <img src={pfp_1} alt="" />
-                <h3>Jenna Ortega</h3>
-              </div>
-              <p>
-                “Best cut I've ever had! The attention to detail and friendly
-                vibe make every visit a great experience. I wouldn’t go anywhere
-                else!”
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="user-info">
-                <img src={pfp_2} alt="" />
-                <h3>Tom Cruise</h3>
-              </div>
-              <p>
-                “Best cut I've ever had! The attention to detail and friendly
-                vibe make every visit a great experience. I wouldn’t go anywhere
-                else!”
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="user-info">
-                <img src={pfp_3} alt="" />
-                <h3>Jenna Ortega</h3>
-              </div>
-              <p>
-                “Best cut I've ever had! The attention to detail and friendly
-                vibe make every visit a great experience. I wouldn’t go anywhere
-                else!”
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="user-info">
-                <img src={pfp_4} alt="" />
-                <h3>Jenna Ortega</h3>
-              </div>
-              <p>
-                “Best cut I've ever had! The attention to detail and friendly
-                vibe make every visit a great experience. I wouldn’t go anywhere
-                else!”
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="user-info">
-                <img src={pfp_5} alt="" />
-                <h3>Jenna Ortega</h3>
-              </div>
-              <p>
-                “Best cut I've ever had! The attention to detail and friendly
-                vibe make every visit a great experience. I wouldn’t go anywhere
-                else!”
-              </p>
-            </div>
-          </li>
-        </ul>
       </div>
+      
     </div>
   );
 };

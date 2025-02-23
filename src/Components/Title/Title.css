@@ -12,3 +12,20 @@
 .title h1 {
     font-size: 30px;
 }
+
+.title-basic {
+    color: #DDA15E;
+}
+.title-primary {
+    color: #fff;
+    opacity: 0.4;
+}
+.subtitle-basic {
+    color: #606C38;
+}
+.subtitle-primary {
+    color: #DDA15E;
+}
+.subtitle-secondary {
+    color: #fff;
+}

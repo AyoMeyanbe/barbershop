@@ -1,4 +1,5 @@
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import Gallery from "./Components/Gallery/Gallery";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
@@ -16,6 +17,7 @@ function App() {
       <Gallery />
       <Team />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
