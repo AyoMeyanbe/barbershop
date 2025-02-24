@@ -76,7 +76,8 @@ const Testimonials = () => {
             <div key={index} className="slide-container">
             <div className="slide">
               <div className="user-info">
-                <img src={`https://i.pravatar.cc/150?img=${index}`} alt="" />
+                <img src={testimony.image} alt="" />
+                {/* <img src={`https://i.pravatar.cc/150?img=${index}`} alt="" /> */}
                 <h3>{testimony.name}</h3>
               </div>
               <p>
