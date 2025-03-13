@@ -10,4 +10,5 @@
 .gallery img {
     width: 32.5%;
     border-radius: 15px;
+    cursor: pointer;
 }

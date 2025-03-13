@@ -2,9 +2,6 @@ import React from 'react'
 import './Title.css'
 
 const Title = ({title, subTitle, type='basic'}) => {
-  let sum = 5;
-  let value = "5";
-  console.log(sum == value, sum === value)
   return (
     <div className='title'>
       <h2 className={

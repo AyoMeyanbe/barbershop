@@ -19,7 +19,6 @@ const Testimonials = () => {
       slider.current.style.transform = `translateX(${tx}%)`;
     }
   }, [tx]);
-  console.log(tx);
 
   const increaseTx = () => {
     if (tx > -60) {
@@ -27,7 +26,6 @@ const Testimonials = () => {
       // tx-=20;
     }
     // slider.current.style.transform = `translateX(${tx}%)`
-    console.log(tx);
   };
   const decreaseTx = () => {
     if (tx < 0) {
@@ -35,39 +33,38 @@ const Testimonials = () => {
       // tx+=20;
     }
     // slider.current.style.transform = `translateX(${tx}%)`
-    console.log(tx);
   };
 
   const testimonies = [
     {
-      name: "Jeff",
+      name: "Jenna O.",
       image: pfp_1,
       text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
     },
     {
-      name: "Jeff",
+      name: "James W.",
       image: pfp_2,
-      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+      text: "\"This place is top-notch! The attention to detail is incredible, and the barbers really take their time to make sure you leave looking your best. I won’t go anywhere else!\""                
     },
     {
-      name: "Jeff",
+      name: "Marcus T.",
       image: pfp_3,
-      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+      text: "\"From the moment I walked in, I felt welcomed. The atmosphere is relaxed, and the barbers are true professionals. Best fade I’ve ever had!\""                
     },
     {
-      name: "Jeff",
+      name: "Ryan D.",
       image: pfp_4,
-      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+      text: "\"I was nervous about trying a new place, but these guys nailed it! My cut was sharp, and the hot towel treatment was a game-changer. Highly recommend!\""                
     },
     {
-      name: "Jeff",
+      name: "Luis M.",
       image: pfp_5,
-      text: "\"Best cut I've ever had! The attention to detail and friendly vibe make every visit a great experience. I wouldn't go anywhere else!\""                
+      text: "\"A hidden gem! The barbers here have serious skills, and the customer service is outstanding. They listen to what you want and deliver every time.\""                
     }
   ]
 
   return (
-    <div>
+    <div className="testimonial">
       <Title title="Testimonials" subTitle="Voices of Satisfaction" />
       <div className="container slider">
         

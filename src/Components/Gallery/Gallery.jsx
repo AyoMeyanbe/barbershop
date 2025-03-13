@@ -8,17 +8,17 @@ import gallery_4 from '../../barber-assets/gallery-4.jpg'
 import gallery_5 from '../../barber-assets/gallery-5.jpg'
 import gallery_6 from '../../barber-assets/gallery-6.jpg'
 
-const Gallery = () => {
+const Gallery = ({setCarousel, setImgId}) => {
   return (
-    <div>
+    <div className='galleryComp'>
       <Title title="Gallery" subTitle="Some of our Work" />
       <div className="container gallery">
-        <img src={gallery_1} alt="" />
-        <img src={gallery_2} alt="" />
-        <img src={gallery_3} alt="" />
-        <img src={gallery_4} alt="" />
-        <img src={gallery_5} alt="" />
-        <img src={gallery_6} alt="" />
+        <img src={gallery_1} alt="" onClick={() => {setCarousel(true); setImgId(0)}}/>
+        <img src={gallery_2} alt="" onClick={() => {setCarousel(true); setImgId(1)}}/>
+        <img src={gallery_3} alt="" onClick={() => {setCarousel(true); setImgId(2)}}/>
+        <img src={gallery_4} alt="" onClick={() => {setCarousel(true); setImgId(3)}}/>
+        <img src={gallery_5} alt="" onClick={() => {setCarousel(true); setImgId(4)}}/>
+        <img src={gallery_6} alt="" onClick={() => {setCarousel(true); setImgId(5)}}/>
       </div>
     </div>
   )

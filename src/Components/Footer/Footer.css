@@ -1,0 +1,13 @@
+.footer {
+    background-color: #606C38;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 40px;
+    align-items: center;
+}
+.links img {
+    width: 36px;
+    margin: 0 10px;
+    cursor: pointer;
+}

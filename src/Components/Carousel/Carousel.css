@@ -1,0 +1,41 @@
+.pop-up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 2px solid white;
+}
+.carouselImg {
+  height: 90vh;
+  
+}
+.pop-up.hide {
+    display: none;
+}
+.next, .back {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    right: -60px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.next:hover, .back:hover {
+    background-color: #283613;
+}
+.back{
+    left: -60px;
+}
