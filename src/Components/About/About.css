@@ -28,3 +28,47 @@ hr {
     color: #333333;
     font-size: 20px;
 }
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 1100px) { 
+    hr {
+        margin: 10px 0;
+    }
+    .about-text {
+        padding-left: 16px;
+    }
+}
+@media (max-width: 990px) { 
+    .about {
+        margin: 80px 61px 40px 61px;
+    }
+    .about-img {
+        width: 30%;
+    }
+    .about-text h1 {
+        font-size: 24px;
+    }
+    .about-text h3 {
+        font-size: 20px;
+    }
+    .about-text p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 700px) { 
+    .about {
+        margin: 80px 36px 40px 36px;
+    }
+    .about-text h1 {
+        font-size: 20px;
+    }
+    .about-text h3 {
+        font-size: 16px;
+    }
+    .about-text p {
+        font-size: 12px;
+    }
+    .about-text {
+        padding-left: 12px;
+    }
+}

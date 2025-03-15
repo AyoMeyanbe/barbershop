@@ -12,3 +12,15 @@
     border-radius: 15px;
     cursor: pointer;
 }
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 1065px) {
+    .gallery img {
+        width: 49%;
+    }
+}
+@media (max-width: 515px) {
+    .gallery img {
+        width: 45%;
+    }
+}

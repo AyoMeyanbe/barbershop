@@ -11,3 +11,23 @@
     margin: 0 10px;
     cursor: pointer;
 }
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 700px) {
+    .links img {
+        width: 28px;
+    }
+    .footer {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 505px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text {
+        margin-bottom: 12px;
+    }
+}

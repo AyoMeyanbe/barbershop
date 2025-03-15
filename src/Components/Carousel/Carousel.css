@@ -19,7 +19,6 @@
 }
 .carouselImg {
   height: 90vh;
-  
 }
 .pop-up.hide {
     display: none;
@@ -38,4 +37,32 @@
 }
 .back{
     left: -60px;
+}
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 1030px) {
+  .carouselImg {
+    height: 70vh;
+  }
+}
+@media (max-width: 830px) {
+  .carouselImg {
+    height: 60vh;
+  }
+  .next {
+    right: 0;
+  }
+  .back {
+    left: 0;
+  }
+}
+@media (max-width: 620px) {
+  .carouselImg {
+    height: 50vh;
+  }
+}
+@media (max-width: 515px) {
+  .carouselImg {
+    height: 45vh;
+  }
 }

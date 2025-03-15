@@ -66,11 +66,11 @@ const Testimonials = () => {
   return (
     <div className="testimonial">
       <Title title="Testimonials" subTitle="Voices of Satisfaction" />
-      <div className="container slider">
-        
+      <div className="container containerTest">
+      <div className="slider">
         <div ref={slider} className="testimonies">
           {testimonies.map((testimony, index) => (
-            <div key={index} className="slide-container">
+            <div key={index} className="slide-containers">
             <div className="slide">
               <div className="user-info">
                 <img src={testimony.image} alt="" />
@@ -87,7 +87,7 @@ const Testimonials = () => {
         <img src={next_btn} alt="" className="next-btn" onClick={increaseTx} />
         <img src={back_btn} alt="" className="back-btn" onClick={decreaseTx} />
       </div>
-      
+      </div>
     </div>
   );
 };

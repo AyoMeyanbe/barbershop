@@ -20,6 +20,7 @@
 .hero h1 {
     font-size: 64px;
     font-weight: normal;
+    text-align: center;
 }
 
 .location {
@@ -29,9 +30,11 @@
 }
 .location h4 {
     font-size: 16px;
+    text-align: center;
 }
 .location img {
     width: 25px;
+    margin-right: 5px;
 }
 .explore-btn {
     background-color: #283618;
@@ -47,4 +50,41 @@
 .explore-img {
     width: 25px;
     margin-left: 10px;
+}
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 1070px) { 
+    .hero h1 {
+        font-size: 56px;
+    }
+    .hero h3 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 850px) { 
+    .hero h1 {
+        font-size: 50px;
+    }
+    .hero h3 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 520px) { 
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero h3 {
+        font-size: 20px;
+    }
+    .location h4 {
+        font-size: 12px;
+    }
+    .location img {
+        margin-right: 0;
+    }
+    .explore-btn {
+        width: 180px;
+        font-size: 12px;
+        height: 40px;
+    }
 }

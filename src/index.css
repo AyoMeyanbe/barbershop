@@ -24,3 +24,10 @@ button {
 .container {
   margin: 0 20%;
 }
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 800px) {
+  .container {
+    margin: 0 10%;
+  }
+}

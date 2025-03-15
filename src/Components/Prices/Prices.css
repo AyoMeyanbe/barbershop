@@ -18,3 +18,9 @@
 .prices-display ul li:nth-child(6) {
     border-bottom: 0;
 }
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 500px) {
+    .prices-display {
+        padding: 43px 36px;
+    }
+}
